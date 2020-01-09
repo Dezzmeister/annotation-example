@@ -20,4 +20,14 @@ public final class UnfinishedClass3 extends UnfinishedClass2 {
 	private final int getBricks() {
 		return (int) System.currentTimeMillis();
 	}
+	
+	private class HiddenClass {
+		private class NestedAgain {
+			
+			@Priority(3)
+			private int nestedFunction(boolean bool) {
+				return 5;
+			}
+		}
+	}
 }
